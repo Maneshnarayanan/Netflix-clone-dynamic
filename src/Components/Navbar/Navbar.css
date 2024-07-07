@@ -1,23 +1,79 @@
 .navbar {
-    width: 100%;
-    height: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.61);
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: rgb(20, 20, 20) 0.5s ease;
+    z-index: 1;
 }
 
 .logo {
-    position: fixed;
-    left: 20px;
-    width: 80px;
+    
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 2rem;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    left: 4rem;
+
 }
+
+
+.primary-menu--list{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    left: 13rem;
+    list-style: none;
+}
+
+.primary-menu--item a {
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.primary-menu--item a:hover{
+    color: #808080;
+}
+
+
+/* SECONDARY NAVIGATION */
+
+.secondary-menu--list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    right: 4rem;
+}
+
+.secondary-menu--item{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+}
+
+.secondary-menu--item a{
+    color: white;
+    font-size: 1.3rem;
+}
+
+.secondary-menu--user-icon {
+    background-image: url("https://github.com/debschaan/netflix-clone/blob/main/assets/img/user%201.png?raw=true");
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+}
+
 
 .avatar {
     height: 35px;
-    position: fixed;
-    right: 20px;
+    right: 60px;
+    position: relative;
 }
